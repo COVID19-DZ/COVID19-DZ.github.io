@@ -8,18 +8,19 @@ jQuery(document).ready(function () {
         showTooltip: true,
         // showLabels: true,
         colors: {
-            9: '#FF8000',   // Blida
+            9:  '#FF8000',   // Blida
+            
+            1:  '#FFE5CC',   // Adrar
+            6:  '#FFE5CC',   // Béjaïa
+            10: '#FFE5CC',  // Bouira
+            15: '#FFE5CC',  // Tizi Ouzou
             16: '#FFE5CC',  // Alger
-            6: '#FFE5CC',
-            21: '#FFE5CC',
-            15: '#FFE5CC',
-            39: '#FFE5CC',
-            26: '#FFE5CC',
-            1: '#FFE5CC',
-            34: '#FFE5CC',
-            10: '#FFE5CC',
-            35: '#FFE5CC',
-            41: '#FFE5CC'
+            21: '#FFE5CC',  // Skikda
+            26: '#FFE5CC',  // Médéa
+            34: '#FFE5CC',  // Bordj Bou Arreridj
+            35: '#FFE5CC',  // Boumerdès
+            39: '#FFE5CC',  // El Oued
+            41: '#FFE5CC'   // Souk Ahras
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
