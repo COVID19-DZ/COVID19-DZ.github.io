@@ -70,13 +70,18 @@ var GoogleLineBasic = function() {
             var line_chart_element = document.getElementById('daily-graph');
             var data = google.visualization.arrayToDataTable([
                 ['يوم', 'إصابات', 'وفيات'],
+                ['02/03',  5,   0],
+                ['05/03',  12,  0],
+                ['07/03',  2,   0],
+                ['06/03',  1,   0],
+                ['12/03',  5,   1],
                 ['13/03',  2,   0],
-                ['14/03',  2,   1],
-                ['15/03',  6,   1],
-                ['16/03',  6,   1],
-                ['17/03',  6,   1],
+                ['14/03',  10,  2],
+                ['15/03',  17,  1],
+                ['16/03',  6,   0],
+                ['17/03',  1,   1],
                 ['18/03',  12,  1],
-                ['19/03',  10,  3]
+                ['19/03',  10,  2]
             ]);
             var options = {
                 fontName: 'Roboto',
@@ -119,7 +124,6 @@ var GoogleLineBasic = function() {
                 }
             };
 
-            // Draw chart
             var line_chart = new google.visualization.LineChart(line_chart_element);
             line_chart.draw(data, options);
         }
@@ -173,13 +177,18 @@ var GoogleLineBasic = function() {
             var line_chart_element = document.getElementById('total-graph');
             var data = google.visualization.arrayToDataTable([
                 ['يوم', 'إصابات', 'وفيات'],
-                ['13/03',  27,  3],
-                ['14/03',  48,  4],
+                ['02/03',  5,   0],
+                ['05/03',  17,  0],
+                ['07/03',  19,  0],
+                ['06/03',  20,  0],
+                ['12/03',  25,  1],
+                ['13/03',  27,  1],
+                ['14/03',  37,  3],
                 ['15/03',  54,  4],
-                ['16/03',  54,  4],
-                ['17/03',  60,  5],
-                ['18/03',  72,  6],
-                ['19/03',  82,  9]
+                ['16/03',  60,  4],
+                ['17/03',  61,  5],
+                ['18/03',  73,  6],
+                ['19/03',  82,  8]
             ]);
             var options = {
                 fontName: 'Roboto',
