@@ -8,8 +8,8 @@ jQuery(document).ready(function () {
         showTooltip: true,
         // showLabels: true,
         colors: {
-            9: '#FF8000',
-            16: '#FFE5CC',
+            9: '#FF8000',   // Blida
+            16: '#FFE5CC',  // Alger
             6: '#FFE5CC',
             21: '#FFE5CC',
             15: '#FFE5CC',
@@ -20,8 +20,6 @@ jQuery(document).ready(function () {
             10: '#FFE5CC',
             35: '#FFE5CC',
             41: '#FFE5CC'
-
-
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
@@ -71,7 +69,7 @@ var GoogleLineBasic = function() {
         function drawLineChart() {
             var line_chart_element = document.getElementById('daily-graph');
             var data = google.visualization.arrayToDataTable([
-                ['Day', 'Active', 'Death'],
+                ['يوم', 'إصابات', 'وفيات'],
                 ['13/03',  2,   0],
                 ['14/03',  2,   1],
                 ['15/03',  6,   1],
@@ -101,7 +99,7 @@ var GoogleLineBasic = function() {
                 series: [{'color': '#1a5c79'}, {'color': '#d63a00'}],
                 intervals: {'style': 'line'},
                 vAxis: {
-                    title: 'Number of Cases',
+                    title: 'عدد الحالات',
                     titleTextStyle: {
                         fontSize: 10,
                         italic: false
@@ -174,7 +172,7 @@ var GoogleLineBasic = function() {
         function drawLineChart() {
             var line_chart_element = document.getElementById('total-graph');
             var data = google.visualization.arrayToDataTable([
-                ['Day', 'Active', 'Death'],
+                ['يوم', 'إصابات', 'وفيات'],
                 ['13/03',  27,  3],
                 ['14/03',  48,  4],
                 ['15/03',  54,  4],
@@ -204,7 +202,7 @@ var GoogleLineBasic = function() {
                 series: [{'color': '#1a5c79'}, {'color': '#d63a00'}], // {'color': '#4cae4c'}, 
                 intervals: {'style': 'line'},
                 vAxis: {
-                    title: 'Number of Cases',
+                    title: 'عدد الحالات',
                     titleTextStyle: {
                         fontSize: 10,
                         italic: false
