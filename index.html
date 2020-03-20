@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>DZ's COVID-19 Epidemic Tracker</title>
+    <title>تطور إنتشار وباء كورونا في الجزائر</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
@@ -35,93 +35,86 @@
     <script type="text/javascript" src="jquery.vmap.js"></script>
     <script type="text/javascript" src="jquery.vmap.algeria.js" charset="utf-8"></script>
     <script type="text/javascript" src="functions.js" charset="utf-8"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107050630-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107050630-2');
+    </script>
+
 </head>
 
 <body class="layout-boxed-bg">
 
-<!-- Boxed layout wrapper -->
 <div class="d-flex flex-column flex-1 layout-boxed">
 
-    <!-- Main navbar -->
     <div class="navbar navbar-expand-md navbar-dark">
         <div class="navbar-brand">
         </div>
     </div>
-    <!-- /main navbar -->
 
-    <!-- Page content -->
     <div class="page-content">
 
-        <!-- Main content -->
         <div class="content-wrapper">
 
-            <!-- Page header -->
             <div class="page-header page-header-light">
                 <div class="page-header-content header-elements-md-inline">
                     <div class="page-title d-flex">
-                        <h4><span class="font-weight-semibold">تعقب إنتشار فيروس كورونا في الجزائر</span></h4>
-                        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                        <h4><span class="font-weight-semibold">تطور إنتشار وباء كورونا في الجزائر</span></h4>
                     </div>
                 </div>
             </div>
-            <!-- /page header -->
 
-
-            <!-- Content area -->
             <div class="content">
-
-                <!-- Dashboard content -->
                 <div class="row">
                     <div class="col-xl-8">
-                        <!-- Map -->
-                        <div class="card text-center">
-                            <!-- Map -->
+                        <div class="card">
                             <div class="row text-center mb-2">
-                                <div class="col-3">
-                                    <h3 style="color: #1a5c79" class="font-weight-semibold mb-0" >90</h3>
-                                    <span class="text-muted font-size-sm">حالات إصابة</span>
+                                <div class="col-4">
+                                    <h3><span class="text-info-600">95</span></h3>
+                                    <span class="text-muted font-size-sm">حالة إصابة</span>
                                 </div>
 
-                                <div class="col-3">
-                                    <h3 style="color: #4cae4c" class="font-weight-semibold mb-0">32</h3>
-                                    <span  class="text-muted font-size-sm">حالات شفاء</span>
+                                <div class="col-4">
+                                    <h3><span class="text-success-600">32</span></h3>
+                                    <span class="text-muted font-size-sm">حالة شفاء</span>
                                 </div>
 
-                                <div class="col-3">
-                                    <h3 style="color: #d63a00" class="font-weight-semibold mb-0" >10</h3>
-                                    <span  class="text-muted font-size-sm">حالات موت</span>
+                                <div class="col-4">
+                                    <h3><span class="text-danger-600">10</span></h3>
+                                    <span  class="text-muted font-size-sm">حالة وفاة</span>
                                 </div>
-
                             </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
                             <div id="vmap" style="width: 350px; height: 350px;"></div>
 
-                            <ul style="list-style-type:square;">
+                            <ul style="list-style-type: square;">
                                 <li style="color: #FFE5CC">0-9</li>
                                 <li style="color: #FF8000">10-100</li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="card-body">
-                                Daily New Cases
-                                <div class="chart-container">
-                                    <div class="chart" id="daily-graph" style="width: 100%;"></div>
-                                </div>
-                            </div>
-
-                            <div class="card-body">
-                                Total Cases
-                                <div class="chart-container">
-                                    <div class="chart" id="total-graph" style="width: 100%;"></div>
-                                </div>
-                            </div>
-
-                            <table class="table">
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
+                            <table class="table text-right">
                                 <thead>
                                 <tr>
                                     <th scope="col">الولاية</th>
                                     <th scope="col" class="text-info">إصابة</th>
                                     <th scope="col" class="text-success">شفاء</th>
-                                    <th scope="col" class="text-danger">موت</th>
+                                    <th scope="col" class="text-danger">وفاة</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -230,20 +223,56 @@
                                     <td>0</td>
                                     <td>0</td>
                                 </tr>
+                                <tr>
+                                    <th scope="row">سيدي بلعباس</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
                                 </tbody>
                             </table>
-
-
-
                         </div>
+                    </div>
+                </div>
 
-                        <!-- latest news -->
+                <div class="row">
+                    <div class="col-xl-8">
                         <div class="card">
+                            <div class="card-body">
+                                إحصائيات عن الحالات التراكمية الكلية
+                                <div class="chart-container">
+                                    <div class="chart" id="total-graph" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card">
+                            <div class="card-body">
+                                إحصائيات عن الحالات اليومية
+                                <div class="chart-container">
+                                    <div class="chart" id="daily-graph" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+     
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card text-right">
                             <div class="card-header header-elements-inline">
                                 <h6 class="card-title">آخر الأخبار</h6>
                             </div>
                             <div class="card-body">
                                 <div class="list-feed list-feed-solid">
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">19/03/2020</div>
+                                        وفاة رجل يبلغ من العمر 47 سنة في المدية
+                                    </div>
                                     <div class="list-feed-item border-info-800">
                                         <div class="text-muted font-size-sm mb-0">19/03/2020</div>
                                         إصابة 10 ووفاة واحدة
@@ -257,19 +286,33 @@
                                         وفاة رجل يبلغ من العمر 62 سنة من ولاية البليدة
                                     </div>
 
-
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">12/03/2020</div>
+                                        أول حالة وفاة لرجل يبلغ من العمر 67 سنة.
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">02/03/2020</div>
+                                        خمس حالات إصابة بالفيروس في ولاية البليدة.
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">28/02/2020</div>
+                                        أول حالة إصابة سجلت لرعية إيطالي في الجزائر.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- /latest news -->
+                    </div>
+                </div>
 
-                        <!-- info -->
-                        <div class="card">
+                
+                <div class="row">
+                    <div class="col-xl-8">
+                        <div class="card text-right">
                             <div class="card-header header-elements-inline">
-                                <h6 class="card-title">كيف تحمي نفسك من كورونا</h6>
+                                <h6 class="card-title">كيف تحمي نفسك من فيروس كورونا؟</h6>
                             </div>
                             <div class="card-body">
-                                <div class="list-feed list-feed-rhombus list-feed-solid">
+                                <div class="list-feed list-feed-success list-feed-solid">
                                     <div class="list-feed-item border-success-800">
                                         <div class="text-muted font-size-sm mb-1"></div>
                                         <span class="font-weight-semibold">قلل من خطر الإصابة بفيروس كورونا</span>
@@ -310,42 +353,25 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /info -->
-                        <!-- latest news -->
-                        <div class="card">
-                            <div class="card-header header-elements-inline">
-                                <h6 class="card-title">اتصل بنا</h6>
-                            </div>
-                            <div class="card-body">
-                                <ul style="list-style-type:disc;">
-                                    <li>الخط الأخضر: 3030</li>
-                                    <li>من اجل اقتراح أو تبليغ راسلنا على: repapers.me@gmail.com</li>
-                                </ul>
-
-
-
-                            </div>
-                            </div>
-
-                        </div>
-
                     </div>
-
-                   
                 </div>
-                <!-- /dashboard content -->
+
+                <div class="alert alert-success alert-styled-right alert-arrow-right alert-dismissible text-right">
+                    الخط الأخضر: <span class="font-weight-semibold">3030</span>
+                </div>
+
+                <div class="alert alert-info alert-styled-right alert-arrow-right alpha-teal border-teal alert-dismissible text-right">
+                    إتصل بنا: <span class="font-weight-semibold">repapers.me@gmail.com</span>
+                </div>
+
+                <div class="alert alert-info alert-styled-right alert-arrow-right alert-dismissible text-right">
+                    تم تجميع جميع الأرقام من موقع <span class="font-weight-semibold">وزارة الصحة و السكان و إصلاح المستشفيات</span>.
+                </div>            
 
             </div>
-            <!-- /content area -->
-
         </div>
-        <!-- /main content -->
-
     </div>
-    <!-- /page content -->
-
 </div>
-<!-- /boxed layout wrapper -->
 
 </body>
 </html>
