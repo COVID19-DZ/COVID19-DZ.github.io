@@ -8,26 +8,24 @@ jQuery(document).ready(function () {
         showTooltip: true,
         // showLabels: true,
         colors: {
-            9: '#FF8000',
-            16: '#FFE5CC',
-            6: '#FFE5CC',
-            21: '#FFE5CC',
-            15: '#FFE5CC',
-            39: '#FFE5CC',
-            26: '#FFE5CC',
-            1: '#FFE5CC',
-            34: '#FFE5CC',
-            10: '#FFE5CC',
-            35: '#FFE5CC',
-            41: '#FFE5CC',
-
+            9:  '#FF8000',   // Blida
+            
+            1:  '#FFE5CC',   // Adrar
+            6:  '#FFE5CC',   // Béjaïa
+            10: '#FFE5CC',  // Bouira
+            15: '#FFE5CC',  // Tizi Ouzou
+            16: '#FF8000',  // Alger
+            21: '#FFE5CC',  // Skikda
+            26: '#FFE5CC',  // Médéa
+            34: '#FFE5CC',  // Bordj Bou Arreridj
+            35: '#FFE5CC',  // Boumerdès
+            39: '#FFE5CC',  // El Oued
+            41: '#FFE5CC',  // Souk Ahras
             23: '#FFE5CC',  // Annaba
             19: '#FFE5CC',  // Sétif
             29: '#FFE5CC',  // Mascara
             31: '#FFE5CC',  //Oran
             38: '#FFE5CC'   // Tissemsil
-
-
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
@@ -77,14 +75,19 @@ var GoogleLineBasic = function() {
         function drawLineChart() {
             var line_chart_element = document.getElementById('daily-graph');
             var data = google.visualization.arrayToDataTable([
-                ['Day', 'Active', 'Death'],
+                ['يوم', 'إصابات', 'وفيات'],
+                ['02/03',  5,   0],
+                ['05/03',  12,  0],
+                ['06/03',  1,   0],
+                ['07/03',  2,   0],
+                ['12/03',  5,   1],
                 ['13/03',  2,   0],
-                ['14/03',  2,   1],
-                ['15/03',  6,   1],
-                ['16/03',  6,   1],
-                ['17/03',  6,   1],
+                ['14/03',  10,  2],
+                ['15/03',  17,  1],
+                ['16/03',  6,   0],
+                ['17/03',  1,   1],
                 ['18/03',  12,  1],
-                ['19/03',  10,  3]
+                ['19/03',  10,  2]
             ]);
             var options = {
                 fontName: 'Roboto',
@@ -107,7 +110,7 @@ var GoogleLineBasic = function() {
                 series: [{'color': '#1a5c79'}, {'color': '#d63a00'}],
                 intervals: {'style': 'line'},
                 vAxis: {
-                    title: 'Number of Cases',
+                    title: 'عدد الحالات',
                     titleTextStyle: {
                         fontSize: 10,
                         italic: false
@@ -127,7 +130,6 @@ var GoogleLineBasic = function() {
                 }
             };
 
-            // Draw chart
             var line_chart = new google.visualization.LineChart(line_chart_element);
             line_chart.draw(data, options);
         }
@@ -180,14 +182,19 @@ var GoogleLineBasic = function() {
         function drawLineChart() {
             var line_chart_element = document.getElementById('total-graph');
             var data = google.visualization.arrayToDataTable([
-                ['Day', 'Active', 'Death'],
-                ['13/03',  27,  3],
-                ['14/03',  48,  4],
+                ['يوم', 'إصابات', 'وفيات'],
+                ['02/03',  5,   0],
+                ['05/03',  17,  0],
+                ['06/03',  20,  0],
+                ['07/03',  19,  0],
+                ['12/03',  25,  1],
+                ['13/03',  27,  1],
+                ['14/03',  37,  3],
                 ['15/03',  54,  4],
-                ['16/03',  54,  4],
-                ['17/03',  60,  5],
-                ['18/03',  72,  6],
-                ['19/03',  82,  9]
+                ['16/03',  60,  4],
+                ['17/03',  61,  5],
+                ['18/03',  73,  6],
+                ['19/03',  82,  8]
             ]);
             var options = {
                 fontName: 'Roboto',
@@ -210,7 +217,7 @@ var GoogleLineBasic = function() {
                 series: [{'color': '#1a5c79'}, {'color': '#d63a00'}], // {'color': '#4cae4c'}, 
                 intervals: {'style': 'line'},
                 vAxis: {
-                    title: 'Number of Cases',
+                    title: 'عدد الحالات',
                     titleTextStyle: {
                         fontSize: 10,
                         italic: false
