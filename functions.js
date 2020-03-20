@@ -26,7 +26,8 @@ jQuery(document).ready(function () {
             29: '#FFE5CC',  // Mascara
             31: '#FFE5CC',  //Oran
             38: '#FFE5CC',   // Tissemsilt
-            22: '#FFE5CC'   // sba
+            22: '#FFE5CC',   // sba
+            40: '#FFE5CC'   // khanshla
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
@@ -89,7 +90,7 @@ var GoogleLineBasic = function() {
                 ['17/03',  1,   1],
                 ['18/03',  12,  1],
                 ['19/03',  10,  2],
-                ['21/03',  13,  2]
+                ['21/03',  13,  3],
             ]);
             var options = {
                 fontName: 'Roboto',
