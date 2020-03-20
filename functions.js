@@ -26,7 +26,7 @@ jQuery(document).ready(function () {
             19: '#FFE5CC',  // Sétif
             29: '#FFE5CC',  // Mascara
             31: '#FFE5CC',  //Oran
-            38: '#FFE5CC'   // Tissemsilt
+            38: '#FFE5CC'   // Tissemsil
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
