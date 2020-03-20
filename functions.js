@@ -9,6 +9,8 @@ jQuery(document).ready(function () {
         showTooltip: true,
         // showLabels: true,
         colors: {
+            9:  '#FF8000',   // Blida
+            
             1:  '#FFE5CC',   // Adrar
             6:  '#FFE5CC',   // Béjaïa
             10: '#FFE5CC',  // Bouira
