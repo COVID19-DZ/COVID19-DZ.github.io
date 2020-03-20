@@ -14,13 +14,19 @@ jQuery(document).ready(function () {
             6:  '#FFE5CC',   // Béjaïa
             10: '#FFE5CC',  // Bouira
             15: '#FFE5CC',  // Tizi Ouzou
-            16: '#FFE5CC',  // Alger
+            16: '#FF8000',  // Alger
             21: '#FFE5CC',  // Skikda
             26: '#FFE5CC',  // Médéa
             34: '#FFE5CC',  // Bordj Bou Arreridj
             35: '#FFE5CC',  // Boumerdès
             39: '#FFE5CC',  // El Oued
             41: '#FFE5CC'   // Souk Ahras
+            
+            23: '#FFE5CC',  // Annaba
+            19: '#FFE5CC',  // Sétif
+            29: '#FFE5CC',  // Mascara
+            31: '#FFE5CC',  //Oran
+            38: '#FFE5CC'   // Tissemsilt
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
