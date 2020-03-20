@@ -19,7 +19,12 @@ jQuery(document).ready(function () {
             34: '#FFE5CC',
             10: '#FFE5CC',
             35: '#FFE5CC',
-            41: '#FFE5CC'
+            41: '#FFE5CC',
+            23: '#FFE5CC',  // Annaba
+            19: '#FFE5CC',  // Sétif
+            29: '#FFE5CC',  // Mascara
+            31: '#FFE5CC',  //Oran
+            38: '#FFE5CC'   // Tissemsilt
 
 
         },
