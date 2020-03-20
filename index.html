@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DZ's COVID-19 Epidemic Tracker</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+    <link href="global_assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap_limitless.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/layout.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.min.css" rel="stylesheet" type="text/css">
+
+    <script src="global_assets/js/main/jquery.min.js"></script>
+    <script src="global_assets/js/main/bootstrap.bundle.min.js"></script>
+    <script src="global_assets/js/plugins/media/fancybox.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script src = "https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Real-Time Epidemic Tracker</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <link href="bootstrap.min.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.vmap.js"></script>
+    <script type="text/javascript" src="jquery.vmap.algeria.js" charset="utf-8"></script>
+    <script type="text/javascript" src="functions.js" charset="utf-8"></script>
+</head>
+
+<body class="layout-boxed-bg">
+
+<!-- Boxed layout wrapper -->
+<div class="d-flex flex-column flex-1 layout-boxed">
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-expand-md navbar-dark">
+        <div class="navbar-brand">
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-light">
+                <div class="page-header-content header-elements-md-inline">
+                    <div class="page-title d-flex">
+                        <h4><span class="font-weight-semibold">DZ's COVID-19 Tracker</span></h4>
+                        <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Content area -->
+            <div class="content">
+
+                <!-- Dashboard content -->
+                <div class="row">
+                    <div class="col-xl-8">
+                        <!-- Map -->
+                        <div class="card text-center">
+                            <!-- Map -->
+                            <div class="row text-center mb-2">
+                                <div class="col-3">
+                                    <h3 style="color: #1a5c79" class="font-weight-semibold mb-0" >82</h3>
+                                    <span class="text-muted font-size-sm">حالات إصابة</span>
+                                </div>
+
+                                <div class="col-3">
+                                    <h3 style="color: #4cae4c" class="font-weight-semibold mb-0">32</h3>
+                                    <span  class="text-muted font-size-sm">حالات شفاء</span>
+                                </div>
+
+                                <div class="col-3">
+                                    <h3 style="color: #d63a00" class="font-weight-semibold mb-0" >8</h3>
+                                    <span  class="text-muted font-size-sm">حالات موت</span>
+                                </div>
+
+                            </div>
+
+                            <div id="vmap" style="width: 350px; height: 350px;"></div>
+
+                            <ul style="list-style-type:square;">
+                                <li style="color: #FFE5CC">0-9</li>
+                                <li style="color: #FF8000">10-100</li>
+                            </ul>
+
+                            <div class="card-body">
+                                Daily New Cases
+                                <div class="chart-container">
+                                    <div class="chart" id="daily-graph" style="width: 100%;"></div>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                Total Cases
+                                <div class="chart-container">
+                                    <div class="chart" id="total-graph" style="width: 100%;"></div>
+                                </div>
+                            </div>
+
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th scope="col">الولاية</th>
+                                    <th scope="col" class="text-info">إصابة</th>
+                                    <th scope="col" class="text-success">شفاء</th>
+                                    <th scope="col" class="text-danger">موت</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Blida</th>
+                                    <td>51</td>
+                                    <td>32</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Alger</th>
+                                    <td>9</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Tizi Ouzou</th>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Skikda</th>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">El Oued</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Béjaïa</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Médéa</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bouira</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">Bordj Bou Arréridj</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Boumerdès</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Adrar</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Souk Ahras</th>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+
+                        </div>
+
+                        <!-- latest news -->
+                        <div class="card">
+                            <div class="card-header header-elements-inline">
+                                <h6 class="card-title">آخر الأخبار</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="list-feed list-feed-solid">
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">19/03/2020</div>
+                                        إصابة 10 ووفاة واحدة
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">18/03/2020</div>
+                                        وفاة رجل يبلغ من العمر 52 سنة، وإصابة جديدة من ولاية الوادي
+                                    </div>
+                                    <div class="list-feed-item border-info-800">
+                                        <div class="text-muted font-size-sm mb-0">18/03/2020</div>
+                                        وفاة رجل يبلغ من العمر 62 سنة من ولاية البليدة
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /latest news -->
+
+                        <!-- info -->
+                        <div class="card">
+                            <div class="card-header header-elements-inline">
+                                <h6 class="card-title">كيف تحمي نفسك من كورونا</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="list-feed list-feed-rhombus list-feed-solid">
+                                    <div class="list-feed-item border-success-800">
+                                        <div class="text-muted font-size-sm mb-1"></div>
+                                        <span class="font-weight-semibold">قلل من خطر الإصابة بفيروس كورونا</span>
+                                        <div>
+                                            <a href="global_assets/img/overall_ar_lar.png"
+                                               data-popup="lightbox"
+                                               rel="elsevier_applied_computing_and_informatics_certificate_of_reviewing_may_2019">
+                                                <img src="global_assets/img/overall_ar_lar.png"
+                                                     alt="" class="img-preview rounded">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="list-feed-item border-success-800">
+                                        <div class="text-muted font-size-sm mb-1"></div>
+                                        <span class="font-weight-semibold">تجنب مخالطة المرضى دون وقاية</span>
+                                        <div>
+                                            <a href="global_assets/img/isolate_ar_lar.png"
+                                               data-popup="lightbox"
+                                               rel="excellent_student_award_2019">
+                                                <img src="global_assets/img/isolate_ar_lar.png"
+                                                     alt="" class="img-preview rounded">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="list-feed-item border-success-800">
+                                        <div class="text-muted font-size-sm mb-1"></div>
+                                        <span class="font-weight-semibold">قم بحماية نفسك والآخرين - اغسل يديك</span>
+                                        <div>
+                                            <a href="global_assets/img/handwash_ar_lar.png"
+                                               data-popup="lightbox" rel="excellent_student_award_2018">
+                                                <img src="global_assets/img/handwash_ar_lar.png"
+                                                     alt="" class="img-preview rounded">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /info -->
+                        <!-- latest news -->
+                        <div class="card">
+                            <div class="card-header header-elements-inline">
+                                <h6 class="card-title">اتصل بنا</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul style="list-style-type:disc;">
+                                    <li>الخط الأخضر: 3030</li>
+                                    <li>من اجل اقتراح أو تبليغ راسلنا على: repapers.me@gmail.com</li>
+                                </ul>
+
+
+
+                            </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                   
+                </div>
+                <!-- /dashboard content -->
+
+            </div>
+            <!-- /content area -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</div>
+<!-- /boxed layout wrapper -->
+
+</body>
+</html>
