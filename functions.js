@@ -252,5 +252,4 @@ var GoogleLineBasic = function() {
         }
     }
     }();
-
     GoogleLineBasic.init();
