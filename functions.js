@@ -9,7 +9,11 @@ jQuery(document).ready(function () {
         // showLabels: true,
         colors: {
             9:  '#FF8000',   // Blida
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 4a3ebd7ba2dad995b205b62b7c5dc545066385c6
             1:  '#FFE5CC',   // Adrar
             6:  '#FFE5CC',   // Béjaïa
             10: '#FFE5CC',  // Bouira
@@ -21,7 +25,11 @@ jQuery(document).ready(function () {
             35: '#FFE5CC',  // Boumerdès
             39: '#FFE5CC',  // El Oued
             41: '#FFE5CC'   // Souk Ahras
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 4a3ebd7ba2dad995b205b62b7c5dc545066385c6
             23: '#FFE5CC',  // Annaba
             19: '#FFE5CC',  // Sétif
             29: '#FFE5CC',  // Mascara
@@ -251,4 +259,8 @@ var GoogleLineBasic = function() {
     }
 }();
 
+<<<<<<< HEAD
 GoogleLineBasic.init();
+=======
+    GoogleLineBasic.init();
+>>>>>>> 4a3ebd7ba2dad995b205b62b7c5dc545066385c6
