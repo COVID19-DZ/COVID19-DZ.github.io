@@ -20,7 +20,6 @@ jQuery(document).ready(function () {
             35: '#FFE5CC',  // Boumerdès
             39: '#FFE5CC',  // El Oued
             41: '#FFE5CC',  // Souk Ahras
-
             23: '#FFE5CC',  // Annaba
             19: '#FFE5CC',  // Sétif
             29: '#FFE5CC',  // Mascara
