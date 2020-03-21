@@ -1,6 +1,5 @@
 // MAP
 // ---
-
 jQuery(document).ready(function () {
     jQuery('#vmap').vectorMap({
         map: 'dz_fr',
