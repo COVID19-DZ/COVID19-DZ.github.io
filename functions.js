@@ -91,6 +91,7 @@ var GoogleLineBasic = function() {
                 ['18/03',  12,  1],
                 ['19/03',  10,  2],
                 ['21/03',  13,  3],
+                ['22/03',  44,  5]
             ]);
             var options = {
                 fontName: 'Roboto',
@@ -198,7 +199,8 @@ var GoogleLineBasic = function() {
                 ['17/03',  61,  5],
                 ['18/03',  73,  6],
                 ['19/03',  82,  8],
-                ['21/03',  95,  10]
+                ['21/03',  95,  10],
+                 ['22/03', 139,  15]
             ]);
             var options = {
                 fontName: 'Roboto',
