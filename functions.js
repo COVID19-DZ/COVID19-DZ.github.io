@@ -7,13 +7,13 @@ jQuery(document).ready(function () {
         showTooltip: true,
         // showLabels: true,
         colors: {
-            9:  '#990000',   // Blida
+            9:  '#CC0000',   // Blida
             
             1:  '#FFE5CC',   // Adrar
             6:  '#FFE5CC',   // Béjaïa
             10: '#FFE5CC',  // Bouira
-            15: '#CC0000',  // Tizi Ouzou
-            16: '#CC0000',  // Alger
+            15: '#FFB266',  // Tizi Ouzou
+            16: '#FFB266',  // Alger
             21: '#FFE5CC',  // Skikda
             26: '#FFE5CC',  // Médéa
             34: '#FFE5CC',  // Bordj Bou Arreridj
