@@ -7,13 +7,13 @@ jQuery(document).ready(function () {
         showTooltip: true,
         // showLabels: true,
         colors: {
-            9:  '#CC0000',   // Blida
+            9:  '#990000',   // Blida
             
             1:  '#FFE5CC',   // Adrar
             6:  '#FFE5CC',   // Béjaïa
             10: '#FFE5CC',  // Bouira
-            15: '#FFE5CC',  // Tizi Ouzou
-            16: '#FFE5CC',  // Alger
+            15: '#CC0000',  // Tizi Ouzou
+            16: '#CC0000',  // Alger
             21: '#FFE5CC',  // Skikda
             26: '#FFE5CC',  // Médéa
             34: '#FFE5CC',  // Bordj Bou Arreridj
@@ -90,8 +90,9 @@ var GoogleLineBasic = function() {
                 ['18/03',  12,  1],
                 ['19/03',  10,  2],
                 ['21/03',  13,  3],
-                ['22/03',  44,  5],
-                ['23/03',  62,  2]
+                ['22/03',  106,  7],
+                ['23/03',  28,  0]
+            
             ]);
             var options = {
                 fontName: 'Roboto',
@@ -201,7 +202,7 @@ var GoogleLineBasic = function() {
                 ['19/03',  82,  8],
                 ['21/03',  95,  10],
                  ['22/03', 139,  15],
-                ['23/03', 201,  17]
+                ['23/03', 230,  17]
             ]);
             var options = {
                 fontName: 'Roboto',
