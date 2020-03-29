@@ -28,7 +28,8 @@ jQuery(document).ready(function () {
             22: '#FFE5CC',   // sba
             40: '#FFE5CC',   // khanshla
             42: '#FFE5CC',   // khanshla
-             25: '#FFE5CC'   // khanshla
+             25: '#FFE5CC',   // khanshla
+            44: '#FFE5CC'   // khanshla
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
