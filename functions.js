@@ -8,28 +8,48 @@ jQuery(document).ready(function () {
         // showLabels: true,
         colors: {
             9:  '#CC0000',   // Blida
+            16: '#CC0000',  // Alger
             
-            1:  '#FFE5CC',   // Adrar
-            6:  '#FFE5CC',   // Béjaïa
-            10: '#FFE5CC',  // Bouira
             15: '#FFB266',  // Tizi Ouzou
-            16: '#FFB266',  // Alger
-            21: '#FFE5CC',  // Skikda
-            26: '#FFE5CC',  // Médéa
-            34: '#FFE5CC',  // Bordj Bou Arreridj
-            35: '#FFE5CC',  // Boumerdès
-            39: '#FFE5CC',  // El Oued
-            41: '#FFE5CC',   // Souk Ahras
-            23: '#FFE5CC',  // Annaba
-            19: '#FFE5CC',  // Sétif
-            29: '#FFE5CC',  // Mascara
-            31: '#FFE5CC',  //Oran
-            38: '#FFE5CC',   // Tissemsilt
+            31: '#FFB266',  //Oran
+            6:  '#FFB266',   // Béjaïa
+            42: '#FFB266',   // TiPassa
+            19: '#FFB266',  // Sétif
+            26: '#FFB266',  // Médéa
+            27: '#FFB266',   // mostghanam
+            44: '#FFB266',   // ain dafla
+            13: '#FFB266',   // Telemcen
+            39: '#FFB266',  // El Oued
+            21: '#FFB266',  // Skikda
+            34: '#FFB266',  // Bordj Bou Arreridj
+            05: '#FFB266',  // Batna
+            35: '#FFB266',  // Boumerdès
+            25: '#FFB266',   // konstantine
+            18: '#FFB266',   // Jijel
+             29: '#FFB266',  // Mascara
+             2: '#FFB266',  // Mascara
+            
+            10: '#FFE5CC',  // Bouira
             22: '#FFE5CC',   // sba
-            40: '#FFE5CC',   // khanshla
-            42: '#FFE5CC',   // khanshla
-             25: '#FFE5CC',   // khanshla
-            44: '#FFE5CC'   // khanshla
+            23: '#FFE5CC',  // Annaba
+            17: '#FFE5CC',  // Djalfa
+            48: '#FFE5CC',  // Gilizan
+            41: '#FFE5CC',   // Souk Ahras
+            4: '#FFE5CC',   // ome bwaki
+            46: '#FFE5CC',   // AIn timochant
+            36: '#FFE5CC',   // taraf
+            1:  '#FFE5CC',   // Adrar
+             24:  '#FFE5CC',   // galma
+             7:  '#FFE5CC',   // Biskra
+             30:  '#FFE5CC',   // ouaragla
+             40: '#FFE5CC',   // khanshla
+            38: '#FFE5CC',   // Tissemsilt
+            47: '#FFE5CC',   // Ghardaya
+            28: '#FFE5CC',   // Msila
+            33: '#FFE5CC',   // ilizi
+            3: '#FFE5CC',   // aghwat
+            14: '#FFE5CC'   // Tiart
+         
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
