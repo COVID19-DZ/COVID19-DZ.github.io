@@ -48,7 +48,7 @@ jQuery(document).ready(function () {
             28: '#FFE5CC',   // Msila
             33: '#FFE5CC',   // ilizi
             3: '#FFE5CC',   // aghwat
-            14: '#FFE5CC'   // Tiart
+            14: '#FFE5CC',   // Tiart
             43: '#FFE5CC'   // mila
         },
         backgroundColor: '#fff',
