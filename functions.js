@@ -125,7 +125,6 @@ var GoogleLineBasic = function() {
                 ['31/03',  132,  9],
                 ['03/04',  185,  22],
                  ['04/04',  80,  25]
-            
             ]);
             var options = {
                 fontName: 'Roboto',
