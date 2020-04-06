@@ -27,7 +27,7 @@ jQuery(document).ready(function () {
             25: '#FFB266',   // konstantine
             18: '#FFB266',   // Jijel
              29: '#FFB266',  // Mascara
-             2: '#FFB266',  // Mascara
+             2: '#FFB266',  // chlef
             
             10: '#FFE5CC',  // Bouira
             22: '#FFE5CC',   // sba
@@ -49,7 +49,11 @@ jQuery(document).ready(function () {
             33: '#FFE5CC',   // ilizi
             3: '#FFE5CC',   // aghwat
             14: '#FFE5CC',   // Tiart
-            43: '#FFE5CC'   // mila
+            43: '#FFE5CC',   // mila
+            8: '#FFE5CC',   // bshar
+            32: '#FFE5CC',   // bayad
+            45: '#FFE5CC',   // naama
+            
         },
         backgroundColor: '#fff',
         onRegionClick: function (element, code, region) {
